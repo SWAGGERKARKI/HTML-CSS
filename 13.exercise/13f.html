@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Flexbox</title>
+  <style>
+    p {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    .profile-container {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 8px;
+    }
+
+    .profile-picture {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .post-container {
+      display: inline-block;
+      width: 340px;
+    }
+
+    .profile-name,
+    .profile-address {
+      display: inline-block;
+    }
+
+    .name {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .post {
+      margin-top: 6px;
+      font-size: 16px;
+    }
+
+    .address {
+      font-size: 16px;
+      color: grey;
+    }
+
+    .video-wrap {
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(190, 190, 190);
+      border-radius: 16px;
+      width: 340px;
+      height: 100px;
+      margin-top: 10px;
+    }
+
+    .video-blank-space {
+      height: 100px;
+      width: 100px;
+      background-color: rgb(190, 190, 190);
+      display: inline-block;
+      border-top-left-radius: 14px;
+      border-bottom-left-radius: 14px;
+      vertical-align: top;
+      margin-right: 8px;
+    }
+
+    .video-description {
+      display: inline-block;
+      width: 220px;
+      margin-top: 30px;
+    }
+
+    .youtube-address {
+      font-size: 16px;
+      color: grey;
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="twitter-post">
+    <div class="profile-container">
+      <img class="profile-picture" src="MainAfter.webp">
+    </div>
+  
+    <div class="post-container">
+      <div>
+        <div class="profile-name">
+          <p class="name">
+            supersimple.dev
+          </p>
+        </div>
+  
+        <div class="profile-address">
+          <p class="address">
+            @SuperSimpleDev
+          </p>
+        </div>
+    
+      </div>
+  
+      <div>
+        <p class="post">
+          What is backend web development? A complete overview. New video is up!
+        </p>
+  
+        <div class="video-wrap">
+          <div class="video-blank-space"></div>
+          <div class="video-description">
+            <p class="youtube-address">
+              youtube.com
+            </p>
+          
+            <p>
+              Backend web development - a complete overview (2021)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

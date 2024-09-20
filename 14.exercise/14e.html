@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Fixed</title>
+  <style>
+    .profile-clip {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: rgb(222, 221, 221);
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      border-radius: 4px;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .profile-picture {
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+      margin-right: 10px;
+    }
+
+    .profile-name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .add-friend-button {
+      background-color: rgb(77, 77, 207);
+      color: rgb(255, 255, 255);
+      border: none;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 8px;
+      padding-right: 8px;
+
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .add-friend-button:hover {
+      background-color: rgb(60, 90, 212);
+    }
+
+    .message-button {
+      background-color: rgb(204, 204, 204);
+      border: none;
+      border-radius: 4px;
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 8px;
+      padding-right: 8px;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .message-button:hover {
+      background-color: rgb(169, 168, 168);
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-clip">
+    <div class="profile">
+        <img class="profile-picture" src="medium.webp">
+
+        <p class="profile-name">Oliver Cat</p>
+    </div>
+  
+    <div>
+      <button class="add-friend-button">
+        Add Friend
+      </button>
+      <button class="message-button">
+        Message
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>

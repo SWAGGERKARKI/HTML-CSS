@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css grid</title>
+</head>
+<body>
+  <div style="
+      display: grid;
+      grid-template-columns: 100px 100px;
+      margin-bottom: 30px;
+    ">
+    <div style="background-color: lightpink">100px text</div>
+    <div style="background-color: lightblue;">100px <p>text</p></div>
+  </div>
+
+  <div style="
+      display: grid;
+      grid-template-columns: 100px 100px 1fr;
+      margin-bottom: 30px;
+    ">
+    <div style="background-color: lightpink">100px text</div>
+    <div style="background-color: lightblue;">100px <p>text</p></div>
+    <div style="background-color: lightpink">100px text</div>
+  </div>
+
+  <div style="
+      display: grid;
+      grid-template-columns: 100px 100px 1fr 2fr;
+      margin-bottom: 30px;
+    ">
+    <div style="background-color: lightpink">100px text</div>
+    <div style="background-color: lightblue;">100px <p>text</p></div>
+    <div style="background-color: lightpink">100px text</div>
+    <div style="background-color: lightblue;">100px <p>text</p></div>
+  </div>
+
+  <div style="
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 10px;
+    ">
+    <div style="background-color: pink"><p style="width: 300px; height: 130px;"></p></div>
+    <div style="background-color: lightblue"><p style="width: 300px;"></p></div>
+    <div style="background-color: pink"><p style="width: 300px;"></p></div>
+    <div style="background-color: lightblue"><p style="width: 300px;  height: 130px;"></p></div>
+    <div style="background-color: pink"><p style="width: 300px;"></p></div>
+    <div style="background-color: lightblue"><p style="width: 300px;"></p></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Flexbox Technique</title>
+  <style>
+    p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div style="
+      display: flex;
+    ">
+    <div style="
+      background-color: lightpink;
+      height: 70px;
+      width: 140px;
+    "></div>
+
+    <div style="
+      background-color: lightblue;
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+    ">
+      <div>
+        <p>row1</p>
+        <p style="
+          background-color: black;
+          color: white;
+        ">row2</p>
+      </div>
+      <div>
+        <p style="
+            height: 20px;
+          "></p>
+        <p style="
+          background-color: black;
+          color: white;
+        ">row2</p>
+      </div>
+      
+    </div>
+  </div>
+  
+</body>
+</html>

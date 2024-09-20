@@ -1,0 +1,55 @@
+.amazon{
+  color: red;
+  transition: color 0.15s;
+}
+
+.amazon:hover{
+  color: white;
+}
+
+.button-amazon{
+  margin-top: 10px; 
+}
+
+.button-amazon:hover{
+  background-color: black;
+}
+
+.button-amazon:active{
+  background-color: blue;
+  color: black;
+}
+
+.first{
+  height: 25px;
+  width: 100px;
+  background-color: yellow;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 12px;
+}
+  
+.second{
+  height: 25px;
+  width: 100px;
+  background-color: orange;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.one{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.two{
+  color: green;
+  font-weight: bold;
+}
+
+.three{
+  color: rgb(33, 46, 126);
+}

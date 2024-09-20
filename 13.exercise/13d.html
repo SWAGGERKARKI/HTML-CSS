@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Layout Technique</title>
+  <style>
+    p {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    .promo-post {     
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(225, 222, 222);
+      border-radius: 2px;
+
+      width: 330px;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-bottom: 10px;
+
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .inbox-container {
+      margin-bottom: 10px;
+    }
+
+    .inbox {
+      font-size: 10px;
+      color: grey;
+    }
+
+    .profile-picture {
+      height: 40px;
+      width: 40px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-right: 10px;
+      object-position: top;
+    }
+
+    .promotion {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 18px;
+    }
+
+    .title-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 2px;
+      width: 264px;
+    }
+
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .time {
+      font-size: 10px;
+      color: grey;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    .description {
+      font-size: 12px;
+      color: grey;
+    }
+  </style>
+</head>
+<body>
+  <div class="promo-post">
+    <div class="inbox-container">
+      <p class="inbox">
+        ALL INBOXES
+      </p>
+    </div>
+  
+    <div class="promotion">
+      <div>
+        <img class="profile-picture" src="MainAfter.webp">
+      </div>
+  
+      <div>
+        <div class="title-container">
+          <div>
+            <p class="title">
+              Chewy Promotions
+            </p>
+          </div>
+  
+          <div>
+            <p class="time">
+              4:58 PM
+            </p>
+          </div>
+        </div>
+    
+        <p class="subtitle">
+          Biggest sales of the year!
+        </p>
+    
+        <p class="description">
+          Hey there! We're writing to tell you about our...
+        </p>
+      </div>
+    </div>
+
+
+    <div class="promotion">
+      <div>
+        <img class="profile-picture" src="medium.webp">
+      </div>
+  
+      <div>
+        <div class="title-container">
+          <div>
+            <p class="title">
+              Best Buy
+            </p>
+          </div>
+  
+          <div>
+            <p class="time">
+              12:32 PM
+            </p>
+          </div>
+        </div>
+  
+        <p class="subtitle">
+          Your Best Buy eReceipt
+        </p>
+  
+        <p class="description">
+          Thank you for shopping at Best Buy, here is
+        </p>
+      </div>
+    </div>
+    
+
+
+    <div class="promotion">
+      <div>
+        <img class="profile-picture" src="high.webp">
+      </div>
+  
+      <div>
+        <div class="title-container">
+          <p class="title">
+            Netflix
+          </p>
+          <p class="time">
+            9:00 AM
+          </p>
+        </div>
+  
+        <p class="subtitle">
+          Here's what's coming soon to Netflix
+        </p>
+  
+        <p class="description">
+          Brand new movies and shows, old favourites...
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

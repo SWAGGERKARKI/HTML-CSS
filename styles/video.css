@@ -1,0 +1,133 @@
+.youtube-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 35px;
+}
+
+@media (max-width: 870px) {
+  .youtube-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 871px) and (min-width: 1123px) {
+  .youtube-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1124px) {
+  .youtube-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.video-grid a {
+  text-decoration: none;
+}
+
+.video-grid a:hover,
+.video-grid a:active,
+.video-grid a:visited,
+.video-grid a:focus {
+  color: rgb(0, 0, 0);
+}
+
+.youtube-thumbnail {
+  width: 100%;
+}
+
+.channel-picture {
+  display: inline-block;
+  cursor: pointer;
+  display: relative;
+}
+
+.channel-picture .profile-tooltip {
+  height: 80px;
+  width: 240px;
+  background-color:  rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  opacity: 0;
+  position: absolute;
+}
+
+.profile-picture:hover ~ .profile-tooltip {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.profile-tooltip img {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.profile-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.subscribers {
+  font-size: 14px;
+  color: grey;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.video-author {
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 3px;
+}
+
+.video-stats {
+  color: grey;
+  font-size: 12px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 40px;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-time {
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 10px;
+  right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 2px;
+}

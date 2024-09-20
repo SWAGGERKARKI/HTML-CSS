@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Fixed</title>
+  <style>
+    p {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    .first-sidebar {
+      background-color: rgb(25, 25, 25);
+      color: white;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding-top: 16px;
+    }
+
+    .profile-picture {
+      height: 60px;
+      width: 60px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 30px;
+      margin-bottom: 8px;
+    }
+
+    .second-sidebar {
+      background-color: rgb(75, 74, 74);
+      color: rgb(255, 255, 255);
+      position: fixed;
+      left: 80px;
+      top: 0;
+      bottom: 0;
+      width: 200px;
+
+      padding-top: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .title-sign {
+      color: grey;
+      font-size: 26px;
+    }
+
+    .hash-tag {
+      color: grey;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="first-sidebar">
+    <img class="profile-picture" src="high.webp">
+
+    <img class="profile-picture" src="medium.webp">
+
+    <img class="profile-picture" src="MainAfter.webp">
+  </div>
+
+  <div class="second-sidebar">
+    <div class="info">
+      <P class="title">
+        INFO
+      </P>
+      
+      <p class="title-sign">
+        &#43;
+      </p>
+    </div>
+
+    <div>
+      <p class="hash-tag">
+        # new-videos
+      </p>
+
+      <p class="hash-tag">
+        # updates
+      </p>
+
+      <p class="hash-tag">
+        # faq
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Practice</title>
+  <style>
+    p {
+      font-family: Arial;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .lizard-image {
+      height: 164px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      border-color: rgb(207, 207, 207);
+      border-width: 1px;
+      border-style: solid;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-name {
+      margin-bottom: 2px;
+      margin-left: 5px;
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .profile-friend {
+      margin-left: 5px;
+      font-family: Arial;
+      font-size: 12px;
+      color: grey;
+      margin-top: 4px;
+    }
+
+    .add-friend-button {
+      margin-left: 5px;
+      margin-bottom: 8px;
+      background-color: rgb(60, 97, 229);
+      color: rgb(255, 255, 255);
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 14px;
+      padding-right: 14px;
+      font-family: Arial;
+      font-size: 12px;
+      border: none;
+      border-radius: 3px;
+    }
+
+    .cat-image {
+      width: 100%;
+      height: 164px;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .mutual-friend-icon {
+      width: 24px;
+      height: 24px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-left: 4px;
+    }
+
+    .icon-container {
+      width: 100%;
+    }
+
+    .icon-and-mutual {
+      margin-bottom: 5px;
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      column-gap: 4px;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: 160px 160px 160px;
+      column-gap: 10px;
+      align-items: center;
+    }
+
+    .image-container {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-grid">
+    <div class="container">
+      <div class="image-container">
+        <img class="lizard-image" src="MainAfter.webp">
+      </div>
+    
+      <div>
+        <div>
+          <p class="profile-name">
+            Oliver
+          </p>
+        </div>
+      
+        <div class="icon-and-mutual">
+          <div class="icon-container">
+            <img class="mutual-friend-icon" src="potrait.avif">
+          </div>
+    
+          <div class="mutual-friend-container">
+            <p class="profile-friend">
+              2 mutual friends
+            </p>
+          </div>
+        </div>
+      
+        <div>
+          <button class="add-friend-button">
+            Add Friend
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="image-container">
+        <img class="lizard-image" src="medium.webp">
+      </div>
+    
+      <div>
+        <div>
+          <p class="profile-name">
+            Mini
+          </p>
+        </div>
+      
+        <div class="icon-and-mutual">
+          <div class="icon-container">
+            <img class="mutual-friend-icon" src="potrait.avif">
+          </div>
+    
+          <div class="mutual-friend-container">
+            <p class="profile-friend">
+              3 mutual friends
+            </p>
+          </div>
+        </div>
+      
+        <div>
+          <button class="add-friend-button">
+            Add Friend
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="image-container">
+        <img class="cat-image" src="high.webp">
+      </div>
+    
+      <div>
+        <div>
+          <p class="profile-name">
+            Rex
+          </p>
+        </div>
+      
+        <div class="icon-and-mutual">
+          <div class="icon-container">
+            <img class="mutual-friend-icon" src="potrait.avif">
+          </div>
+    
+          <div class="mutual-friend-container">
+            <p class="profile-friend">
+              4 mutual friends
+            </p>
+          </div>
+        </div>
+      
+        <div>
+          <button class="add-friend-button">
+            Add Friend
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

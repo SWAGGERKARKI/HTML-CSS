@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Layouts Technique</title>
+  <style>
+    p {
+      font-family: Arial;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .lizard-image {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    .profile-picture {
+      width: 60px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+    }
+
+    .profile-description {
+      display: inline-block;
+      width: 180px;
+    }
+
+    .follow-button {
+      vertical-align: middle;
+    }
+
+    .profile-name {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .profile-title,
+    .profile-subtitle {
+      font-size: 14px;
+      color: grey;
+    }
+
+    .profile-title {
+      margin-bottom: 4px;
+    }
+
+    .button-container {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .follow-button {
+      margin-top: 14px;
+      background-color: rgb(18, 135, 207);
+      color: rgb(255, 255, 255);
+      border: none;
+      font-family: Arial;
+      font-size: 16px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 14px;
+      padding-right: 14px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-picture">
+    <img class="lizard-image" src="MainAfter.webp">
+  </div>
+
+  <div class="profile-description">
+    <p class="profile-name">
+      Oliver
+    </p>
+    <p class="profile-title">
+      the cat
+    </p>
+    <p class="profile-subtitle">
+      Popular
+    </p>
+  </div>
+  
+  <div class="button-container">
+    <button class="follow-button">
+      Follow
+    </button>
+  </div>
+
+</body>
+</html>
